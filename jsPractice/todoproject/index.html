@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To Do List</title>
+</head>
+<body>
+  <div class="main__top">
+    <div class="js-clock">
+      <span>08:43:00</span>
+    </div>
+    <div>
+      <form class="js-form">
+        <input type="text" placeholder="What is your name?" class="asking__name"/>
+      </form>
+      <span class="js-userName"></span>
+      <input type="reset" value="reset" id="reset-btn" />
+    </div>
+  </div>
+
+  <form class="toDoForm">
+    <input type="text" placeholder="Write a to dos here!" />
+  </form>
+  <ul class="js-toDoList"></ul>
+
+  <script src="clock.js"></script>
+  <script src="userName.js"></script>
+  <script src="bg.js"></script>
+</body>
+</html>
