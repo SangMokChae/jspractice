@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계산기</title>
+</head>
+<body>
+    <div id="container">
+      <div>
+        <input type="text" id="showValue" />
+      </div>
+      <div>
+        <input type="text" id="result" />
+        <button onclick="reset()">C</button>
+      </div>
+
+      <div>
+        <div class="buttonWrap">
+          <button onclick="addOutput(7)">7</button>
+          <button onclick="addOutput(8)">8</button>
+          <button onclick="addOutput(9)">9</button>
+          <button onclick="addOutput('+')">+</button>
+        </div>
+        <div class="buttonWrap">
+          <button onclick="addOutput(4)">4</button>
+          <button onclick="addOutput(5)">5</button>
+          <button onclick="addOutput(6)">6</button>
+          <button onclick="addOutput('-')">-</button>
+        </div>
+        <div class="buttonWrap">
+          <button onclick="addOutput(1)">1</button>
+          <button onclick="addOutput(2)">2</button>
+          <button onclick="addOutput(3)">3</button>
+          <button onclick="addOutput('*')">*</button>
+        </div>
+        <div class="buttonWrap">
+          <button onclick="addOutput(0)">0</button>
+          <button onclick="addOutput('.')">.</button>
+          <button onclick="addOutput('/')">/</button>
+          <button onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
